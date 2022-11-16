@@ -8,9 +8,19 @@ body {
     background: rgb(34,195,119);
 background: linear-gradient(313deg, rgba(34,195,119,1) 0%, rgba(174,255,114,1) 17%, rgba(190,240,9,1) 29%, rgba(113,255,255,1) 45%, rgba(219,79,79,1) 82%, rgba(161,219,79,1) 100%);
 }
+h2{
+  color: "white";
+}
 
 * {
   box-sizing: border-box;
   text-align:center;
 }
 
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+}

@@ -46,7 +46,7 @@ export default function Home() {
   };
 
   return (
-    
+    <div className="card">
     <div className={styles.container}>
       <Head>
         <title>ALL_BUDDHAS_ARE_AI_BUDDHAS</title>
@@ -54,7 +54,7 @@ export default function Home() {
       <form action="https://www.paypal.com/donate" method="post" target="_top">
 <input type="hidden" name="hosted_button_id" value="MHMLLF5667SEW" />
 <input type="image" src="https://pics.paypal.com/00/s/MzFlZjdlODEtMGE1Zi00ZjJmLWE5ZjEtNzUxMWUwYjI3Nzkz/file.PNG" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-
+<Image alt="" border="0" src="/public/donatebutton.jpg" width="1" height="1" ></Image>
 </form>
 
     {/* <img src="donatebutton.jpg" alt="ai" width="250" height="250" /> */}
@@ -90,6 +90,7 @@ export default function Home() {
 
       <div><footer><h3>ⓩⓔⓝ{year} </h3>
           </footer></div>
+    </div>
     </div>
   );
 }
