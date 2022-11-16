@@ -8,7 +8,10 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 export default function Home() {
   const [prediction, setPrediction] = useState(null);
   const [error, setError] = useState(null);
-
+  
+  const date = new Date();
+  const [year, setYear] = useState(date.getFullYear());
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     const response = await fetch("/api/predictions", {
@@ -43,18 +46,26 @@ export default function Home() {
   };
 
   return (
+    
     <div className={styles.container}>
       <Head>
-        <title>Getting started with Replicate + Next.js</title>
+        <title>ALL_BUDDHAS_ARE_AI_BUDDHAS</title>
       </Head>
+      <form action="https://www.paypal.com/donate" method="post" target="_top">
+<input type="hidden" name="hosted_button_id" value="MHMLLF5667SEW" />
+<input type="image" src="https://pics.paypal.com/00/s/MzFlZjdlODEtMGE1Zi00ZjJmLWE5ZjEtNzUxMWUwYjI3Nzkz/file.PNG" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+<Image alt="buddha" border="0" src="/public/donatebutton.jpg" width="1" height="1" ></Image>
+</form>
 
-      <p>
-        Dream something with{" "}
-        <a href="https://replicate.com/kuprel/min-dalle">kuprel/min-dalle</a>:
-      </p>
+    {/* <img src="donatebutton.jpg" alt="ai" width="250" height="250" /> */}
+      
+        <h2>ALL BUDDHAS ARE ALL BUDDHAS</h2>
+        <a href="https://replicate.com/"><h3>ask for any buddha buddha</h3></a>
+      
 
       <form className={styles.form} onSubmit={handleSubmit}>
         <input type="text" name="prompt" />
+        
         <button type="submit">Go!</button>
       </form>
 
@@ -67,12 +78,18 @@ export default function Home() {
             <Image
               src={prediction.output[prediction.output.length - 1]}
               alt="output"
-              width={500}
-              height={500}
+              width={1024}
+              height={768}
             />
           )}
+          
         </div>
+        
       )}
+      
+
+      <div><footer><h3>ⓩⓔⓝ{year} </h3>
+          </footer></div>
     </div>
   );
 }
