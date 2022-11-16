@@ -2,6 +2,8 @@ import { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import EthButton from "./Components/EthButton";
+
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
@@ -87,7 +89,7 @@ export default function Home() {
         
       )}
       
-
+            <EthButton/>
       <div><footer><h3>ⓩⓔⓝ{year} </h3>
           </footer></div>
     </div>
