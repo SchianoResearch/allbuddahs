@@ -8,7 +8,10 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 export default function Home() {
   const [prediction, setPrediction] = useState(null);
   const [error, setError] = useState(null);
-
+  
+  const date = new Date();
+  const [year, setYear] = useState(date.getFullYear());
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     const response = await fetch("/api/predictions", {
@@ -43,15 +46,22 @@ export default function Home() {
   };
 
   return (
+    
     <div className={styles.container}>
       <Head>
-        <title>AI API CALLS</title>
+        <title>ALL_BUDDHAS_ARE_AI_BUDDHAS</title>
       </Head>
-    <img src="donatebutton.jpg" alt="ai" width="200" height="200" />
-      <p>
-        ALL BUDDHAS ARE ALL BUDDHAS{" "}
-        <a href="https://replicate.com/">ask for any buddha buddha</a>:
-      </p>
+      <form action="https://www.paypal.com/donate" method="post" target="_top">
+<input type="hidden" name="hosted_button_id" value="MHMLLF5667SEW" />
+<input type="image" src="https://pics.paypal.com/00/s/MzFlZjdlODEtMGE1Zi00ZjJmLWE5ZjEtNzUxMWUwYjI3Nzkz/file.PNG" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+</form>
+
+    {/* <img src="donatebutton.jpg" alt="ai" width="250" height="250" /> */}
+      
+        <h2>ALL BUDDHAS ARE ALL BUDDHAS</h2>
+        <a href="https://replicate.com/"><h3>ask for any buddha buddha</h3></a>
+      
 
       <form className={styles.form} onSubmit={handleSubmit}>
         <input type="text" name="prompt" />
@@ -72,8 +82,14 @@ export default function Home() {
               height={768}
             />
           )}
+          
         </div>
+        
       )}
+      
+
+      <div><footer><h3>ⓩⓔⓝ{year} </h3>
+          </footer></div>
     </div>
   );
 }
