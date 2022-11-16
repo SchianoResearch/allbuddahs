@@ -46,7 +46,7 @@ export default function Home() {
   };
 
   return (
-    <div className="card">
+    
     <div className={styles.container}>
       <Head>
         <title>ALL_BUDDHAS_ARE_AI_BUDDHAS</title>
@@ -91,6 +91,6 @@ export default function Home() {
       <div><footer><h3>ⓩⓔⓝ{year} </h3>
           </footer></div>
     </div>
-    </div>
+   
   );
 }
