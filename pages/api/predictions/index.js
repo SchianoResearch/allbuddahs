@@ -9,8 +9,8 @@ export default async function handler(req, res) {
       // Pinned to a specific version of kuprel/min-dalle, fetched from:
       // https://replicate.com/kuprel/min-dalle/versions
       version:
-        "2af375da21c5b824a84e1c459f45b69a117ec8649c2aa974112d7cf1840fc0ce",
-      input: { text: req.body.prompt, grid_size: 1 },
+        "8abccf52e7cba9f6e82317253f4a3549082e966db5584e92c808ece132037776",
+      input: { prompt: req.body.prompt, num_outputs: 1,scheduler:"DDIM" ,prompt_strength:0.5, width:1024, height: 768,init_image:req.body.init_image},
     }),
   });
 

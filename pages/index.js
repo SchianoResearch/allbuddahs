@@ -45,16 +45,17 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Getting started with Replicate + Next.js</title>
+        <title>AI API CALLS</title>
       </Head>
-
+    <img src="donatebutton.jpg" alt="ai" width="200" height="200" />
       <p>
-        Dream something with{" "}
-        <a href="https://replicate.com/kuprel/min-dalle">kuprel/min-dalle</a>:
+        ALL BUDDHAS ARE ALL BUDDHAS{" "}
+        <a href="https://replicate.com/">ask for any buddha buddha</a>:
       </p>
 
       <form className={styles.form} onSubmit={handleSubmit}>
         <input type="text" name="prompt" />
+        
         <button type="submit">Go!</button>
       </form>
 
@@ -67,8 +68,8 @@ export default function Home() {
             <Image
               src={prediction.output[prediction.output.length - 1]}
               alt="output"
-              width={500}
-              height={500}
+              width={1024}
+              height={768}
             />
           )}
         </div>
