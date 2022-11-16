@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ethers } from "ethers";
 import ErrorMessage from "./ErrorMessage";
-import TxList from "./TxList";
+import TxList from "./TxList.js";
 
 const startPayment = async ({ setError, setTxs, ether, addr }) => {
   try {
@@ -41,9 +41,9 @@ const EthButton = () => {
   };
 
   return (
-    <form className="m-4"  onSubmit={handleSubmit}>
+    <form className="m-4" onSubmit={handleSubmit}>
       <div className="credit-card w-full lg:w-1/2 sm:w-auto shadow-lg mx-auto rounded-xl bg-white">
-        <main className="mt-4 p-9">
+        <main className="mt-4 p-4">
           <h3 className="text-xl font-semibold text-gray-700 text-center">
             Send ETH donation to 0x341385F7Ba5b8c3f53693e5B433C3Fec61F214e0
           </h3>
