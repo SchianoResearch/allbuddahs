@@ -64,7 +64,7 @@ export default function Home() {
       
 
       <form className={styles.form} onSubmit={handleSubmit}>
-        <input type="text" name="prompt" />
+        <input type="text" name="prompt" width="400px" />
         
         <button type="submit">Go!</button>
       </form>
