@@ -7,6 +7,8 @@ const nextConfig = {
 },
   images: {
     domains: ["replicate.delivery"],
+      domains: ['www.paypal.com'],
+    },
   },
 };
 

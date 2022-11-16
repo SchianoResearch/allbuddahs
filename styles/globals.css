@@ -1,13 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Architects Daughter', cursive;
+    background: rgb(34,195,119);
+background: linear-gradient(313deg, rgba(34,195,119,1) 0%, rgba(174,255,114,1) 17%, rgba(190,240,9,1) 29%, rgba(113,255,255,1) 45%, rgba(219,79,79,1) 82%, rgba(161,219,79,1) 100%);
 }
 
 * {
   box-sizing: border-box;
-  align-items: center;
-  text-align: center;
+  text-align:center;
 }
+
