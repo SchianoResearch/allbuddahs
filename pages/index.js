@@ -78,8 +78,8 @@ export default function Home() {
             <img
               src={prediction.output[prediction.output.length - 1]}
               alt="output"
-              width={1024}
-              height={768}
+              width={512}
+              height={512}
             />
           )}
           
