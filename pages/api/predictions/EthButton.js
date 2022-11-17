@@ -44,9 +44,9 @@ const EthButton = () => {
     <form className="m-4" onSubmit={handleSubmit}>
       <div className="credit-card w-full lg:w-1/2 sm:w-auto shadow-lg mx-auto rounded-xl bg-white">
         <main className="mt-4 p-4">
-          <h3 className="text-xl font-semibold text-gray-700 text-center">
-            Send ETH donation to 0x341385F7Ba5b8c3f53693e5B433C3Fec61F214e0
-          </h3>
+          <p className="text-xl font-semibold text-gray-700 text-center">
+            Send ETH donation to </p>
+            <p className="text-xl font-semibold text-gray-700 text-center">b8c3f53693e5B433C3Fec61F214e0</p>
           <p>copy 🍝 pasta </p>
           <div className="">
             <div className="my-3">
