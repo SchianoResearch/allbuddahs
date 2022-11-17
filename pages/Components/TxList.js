@@ -3,7 +3,7 @@
 
   return (
     <>
-      {txs.map((item) => (
+      {txs((item) => (
         <div key={item} className="alert alert-info mt-5">
           <div className="flex-1">
             <label>{item.hash}</label>
