@@ -46,7 +46,7 @@ const EthButton = () => {
         <main className="mt-4 p-4">
           <p className="text-xl font-semibold text-gray-700 text-center">
             Send ETH donation to </p>
-            <p className="text-xl font-semibold text-gray-700 text-center">b8c3f53693e5B433C3Fec61F214e0</p>
+            <p className="text-xl font-semibold text-gray-700 text-center">0x341385F7Ba5b8c3f53693e5B433C3Fec61F214e0</p>
           <p>copy 🍝 pasta </p>
           <div className="">
             <div className="my-3">
