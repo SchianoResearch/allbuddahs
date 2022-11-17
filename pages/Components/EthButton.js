@@ -3,7 +3,7 @@ import { ethers } from "ethers";
 import ErrorMessage from "./ErrorMessage";
 import TxList from "./TxList.js";
 
-const startPayment = async ({ setError, setTxs, ether, addr }) => {
+async function startPayment ({ setError, setTxs, ether, addr })  {
   try {
     if (!window.ethereum)
       throw new Error("No crypto wallet found. Please install it.");

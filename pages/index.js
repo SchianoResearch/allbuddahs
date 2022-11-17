@@ -56,7 +56,7 @@ export default function Home() {
       <form action="https://www.paypal.com/donate" method="post" target="_top">
 <input type="hidden" name="hosted_button_id" value="MHMLLF5667SEW" />
 <input type="image" src="https://pics.paypal.com/00/s/MzFlZjdlODEtMGE1Zi00ZjJmLWE5ZjEtNzUxMWUwYjI3Nzkz/file.PNG" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-<Image alt="" border="0" src="" width="1" height="1" ></Image>
+<Image alt="" border="0" src="https://pics.paypal.com/00/s/MzFlZjdlODEtMGE1Zi00ZjJmLWE5ZjEtNzUxMWUwYjI3Nzkz/file.PNG" width="1" height="1" ></Image>
 </form>
 
    
@@ -77,7 +77,7 @@ export default function Home() {
         <div>
           <p>{prediction.status}</p>
           {prediction.output && (
-            <img 
+            <Image 
               src={prediction.output[prediction.output.length - 1]}
               alt="output"
               width={512}

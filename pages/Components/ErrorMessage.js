@@ -1,4 +1,4 @@
-export default function ErrorMessage({ message }) {
+const ErrorMessage = ({ message }) => {
   if (!message) return null;
 
   return (
@@ -10,3 +10,4 @@ export default function ErrorMessage({ message }) {
     </div>
   );
 }
+export default ErrorMessage;
