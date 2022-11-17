@@ -1,4 +1,4 @@
- const TxList = ({ txs }) => {
+const TxList = ({ txs }) => {
   if (txs.length === 0) return null;
 
   return (
